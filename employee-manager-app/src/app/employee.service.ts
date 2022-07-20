@@ -7,10 +7,11 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
+
 export class EmployeeService {
 
  
-    private apiServerUrl = environment.apiBaseUrl;
+  private apiServerUrl = environment.apiBaseUrl;
 
 
   constructor(private http: HttpClient) { }
