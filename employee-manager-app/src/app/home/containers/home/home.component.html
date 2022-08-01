@@ -1,6 +1,10 @@
    
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-secondary">
+<nav class="navbar navbar-expand-lg" style="background: -webkit-linear-gradient(
+  45deg,
+  rgba(29, 236, 197, 0.6),
+  rgba(91, 14, 214, 0.6) 100%
+); margin: 0;">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -54,7 +58,7 @@
 
     
       
-       <button type="button" (click)="gotoLogin()" class="btn btn-primary me-3" >
+       <button type="button" (click)="gotoLogin()" class="btn me-3" style="background: rgba(929, 236, 197, 0.6) 100%;" >
         Login
         </button> 
 
@@ -135,7 +139,7 @@
           aria-labelledby="navbarDropdownMenuAvatar"
         >
           <li>
-            <a class="dropdown-item" href="#">My profile</a>
+            <a class="dropdown-item" href="/emp-profile">My profile</a>
           </li>
           <li>
             <a class="dropdown-item" href="#">Settings</a>
@@ -151,13 +155,55 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
-<!-- 
-<img src="https://www.campcodes.com/wp-content/uploads/2021/01/employee-management-system-free-download-830x358.png" alt=""> -->
-<router-outlet></router-outlet>
+
+<!-- <router-outlet></router-outlet> -->
+
+<style>
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #a18cd1;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(29, 236, 197, 0.6),
+      rgba(91, 14, 214, 0.6) 100%
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+      45deg,
+      rgba(29, 236, 197, 0.6),
+      rgba(91, 14, 214, 0.6) 100%
+    );
+  }
+</style>
+
+<!-- Background image -->
+<div
+  class="bg-image bg-opacity-10"
+  style="
+    background-image: url('https://st2.depositphotos.com/1071909/7421/i/600/depositphotos_74218459-stock-photo-human-resources-recruitment.jpg');
+    height: 100vh;
+  "
+>
+  <div class="mask gradient-custom">
+    <div class="h-100" style="margin: 200px;">
+      <h1 class="text-white mb-0">Hello Worker,</h1><br />
+      <h1 class="text-white mb-0">Welcome to Ari Tech</h1>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
 
 
    <!-- footer -->
-   <footer class="bg-dark text-center text-white">
+   <footer class=" text-center text-white" style="background: -webkit-linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.6),
+    rgba(91, 14, 214, 0.6) 100%
+  );">
       <!-- Grid container -->
       <div class="container p-4 pb-0">
         <!-- Section: Social media -->
