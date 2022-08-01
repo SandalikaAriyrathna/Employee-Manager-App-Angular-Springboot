@@ -1,1 +1,236 @@
+   
+<!-- Navbar -->
+<nav *ngIf="!login" class="navbar navbar-expand-lg" style="background: -webkit-linear-gradient(
+  45deg,
+  rgba(29, 236, 197, 0.6),
+  rgba(91, 14, 214, 0.6) 100%
+); margin: 0;">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://media.istockphoto.com/vectors/vector-illustration-icon-with-the-employee-management-system-concept-vector-id1084494738?k=20&m=1084494738&s=170667a&w=0&h=RXqjXE5bvKZXkL7uHxfafaV8oxbCfNGcw-xP_5GupiI="
+          height="70"
+          alt="logo"
+          loading="lazy"
+        />
+       
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+        <li class="nav-item" >
+          <a class="nav-link" style="color: white;" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Events</a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Careers</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="/about-us" style="color: white;">About Us</a>
+        </li>
+
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    
+      
+       <button type="button" (click)="gotoLogin()" class="btn me-3" style="background: rgba(929, 236, 197, 0.6) 100%;" >
+        Login
+        </button> 
+
+
+   
+
+  
+        
+
+    <form class="d-flex input-group w-auto">
+      <input
+        type="search"
+        class="form-control rounded"
+        placeholder="Search"
+        aria-label="Search"
+        aria-describedby="search-addon"
+      />
+      <span class="input-group-text border-0" id="search-addon">
+        <i class="fas fa-search" style="color: black;"></i>
+      </span>
+    </form>
+
+    <!-- Right elements -->
+    <div class="d-flex align-items-center">
+      <!-- Icon -->
+      <a class="text-reset me-3" href="#">
+        <i class="fas fa-shopping-cart" style="margin-left: 20px;"></i>
+      </a>
+
+      <!-- Notifications -->
+      <div class="dropdown">
+        <a
+          class="text-reset me-3 dropdown-toggle hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bell"></i>
+          <span class="badge rounded-pill badge-notification bg-danger">1</span>
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuLink"
+        >
+          <li>
+            <a class="dropdown-item" href="#">Some news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Another news</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Avatar -->
+      <div class="dropdown">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="/emp-profile">My profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Settings</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right elements -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<!-- <router-outlet></router-outlet> -->
+
+<style>
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #a18cd1;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(29, 236, 197, 0.6),
+      rgba(91, 14, 214, 0.6) 100%
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(
+      45deg,
+      rgba(29, 236, 197, 0.6),
+      rgba(91, 14, 214, 0.6) 100%
+    );
+  }
+</style>
+
+  
 <router-outlet></router-outlet>
+
+
+   <!-- footer -->
+   <footer *ngIf="!login" class=" text-center text-white" style="background: -webkit-linear-gradient(
+    45deg,
+    rgba(29, 236, 197, 0.6),
+    rgba(91, 14, 214, 0.6) 100%
+  );">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://EmployeeManager.com/">EmpMan.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>

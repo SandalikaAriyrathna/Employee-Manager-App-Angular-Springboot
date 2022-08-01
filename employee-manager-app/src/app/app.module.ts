@@ -12,14 +12,14 @@ import { HomeComponent } from './home/containers/home/home.component';
 import { AboutUsComponent } from './about-us/containers/about-us/about-us.component';
 import { EmpProfileComponent } from './emp-profile/containers/emp-profile/emp-profile.component';
 
+
 const appRoute: Routes = [
   { path: '', component:  LoginComponent},
   { path: 'login', component:  LoginComponent},
   { path: 'home', component:  HomeComponent},
   { path: 'about-us', component:  AboutUsComponent},
   { path: 'admin-dashboard', component:  AdminDashboardComponent},
-  { path: 'emp-profile', component:  EmpProfileComponent}
- 
+  { path: 'emp-profile', component:  EmpProfileComponent},
  
   
 ];
