@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/containers/home/home.component';
 import { AboutUsComponent } from './about-us/containers/about-us/about-us.component';
 import { EmpProfileComponent } from './emp-profile/containers/emp-profile/emp-profile.component';
+import { CareerComponent } from './career/containers/career/career.component';
 
 
 const appRoute: Routes = [
@@ -20,6 +21,7 @@ const appRoute: Routes = [
   { path: 'about-us', component:  AboutUsComponent},
   { path: 'admin-dashboard', component:  AdminDashboardComponent},
   { path: 'emp-profile', component:  EmpProfileComponent},
+  { path: 'careers', component:  CareerComponent},
  
   
 ];
@@ -32,6 +34,7 @@ const appRoute: Routes = [
     HomeComponent,
     AboutUsComponent,
     EmpProfileComponent,
+    CareerComponent,
 
   
   ],
