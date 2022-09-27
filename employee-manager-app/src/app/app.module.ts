@@ -32,6 +32,7 @@ const appRoute: Routes = [
     HomeComponent,
     AboutUsComponent,
     EmpProfileComponent,
+
   
   ],
   imports: [
